@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Top Reddit Posts</string>
+    <string name="top_reddit_post_details_fragment_title">Reddit Post Details</string>
+    <string name="top_reddit_post_details_button">See details</string>
+    <string name="top_reddit_post_error">An error just happen when the application was loading reddit posts. Click here to try again.</string>
+    <string name="top_reddit_post_url">URL: %1$s</string>
+    <string name="top_reddit_post_save_image_button">Save image</string>
+    <string name="top_reddit_post_save_image_success">Image Saved!</string>
+    <string name="top_reddit_post_save_image_error">Error while saving image on gallery</string>
+</resources>

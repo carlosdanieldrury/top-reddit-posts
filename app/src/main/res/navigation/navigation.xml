@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/reddit_post_list"
+    android:id="@+id/navigation">
+
+    <fragment
+        android:id="@+id/reddit_post_list"
+        android:name="com.drury.topredditposts.presentation.view.TopRedditPostFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_reddit_post_list">
+        <action
+            android:id="@+id/navigate_to_reddit_post_detail"
+            app:destination="@id/reddit_post_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reddit_post_details"
+        android:name="com.drury.topredditposts.presentation.view.TopRedditPostDetailsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_reddit_post_details">
+        <action
+            android:id="@+id/action_reddit_post_details_to_reddit_post_list"
+            app:destination="@id/reddit_post_list" />
+    </fragment>
+
+</navigation>
